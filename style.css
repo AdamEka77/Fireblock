@@ -415,6 +415,20 @@ body {
   padding: 30px;
 }
 
+.logo-slide {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .logo-slide {
+    display: block;
+    width: 100%;
+  }
+  .logoss {
+    display: none;
+  }
+}
+
 .slick-slide {
   margin: 0px 10px;
 }
