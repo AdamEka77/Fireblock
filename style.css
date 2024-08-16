@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  min-height: 10000px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navbar */
+.navbar-brand img {
+  box-sizing: border-box;
+}
+.logo {
+  position: absolute;
+}
+.Fireblock {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(255, 0, 0);
+  margin-left: 65px !important;
+}
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav-link:hover {
+  border-bottom: 1px solid red;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .nav-link {
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  .navrespon ul li a {
+    color: black;
+  }
+  .navrespon ul li a:hover {
+    color: #eee;
+    border-bottom: none;
+  }
+}
+
+/* Jumbotron Banner */
+.hero {
+  background-image: url(img/fireblock-banner.jpg);
+  background-size: cover;
+  height: 720px;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 992px) {
+  .hero {
+    zoom: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    zoom: 55%;
+  }
+}
+
+/* Workingspace */
+.workingspace {
+  margin-top: 95px;
+}
+.workingspace img {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+.workingspace span {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "New Amsterdam", sans-serif;
+}
+.workingspace .kebakaran {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  color: #b2271d;
+}
+.workingspace p {
+  color: #fff;
+  font-size: 15px;
+}
+@media (max-width: 992px) {
+  .workingspace p {
+    text-align: justify;
+  }
+}
+.workingspace-bg {
+  background: rgb(255, 145, 77);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 145, 77, 1) 0%,
+    rgba(178, 39, 29, 1) 100%
+  );
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+
+/* Info Panel */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -40px;
+  background-color: white;
+  padding: 30px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #000;
+  margin-top: -5px;
+}
+.bi-panel {
+  color: #b2271d;
+}
+
+/*  Visi & Misi */
+.Visi-Misi {
+  margin-top: 150px;
+}
+.menyala {
+  color: #b2271d;
+}
+@media (max-width: 992px) {
+  .Visi-Misi h2 {
+    text-align: center;
+  }
+  .Visi-Misi p {
+    text-align: justify;
+  }
+}
+
+/* Produk */
+.produk {
+  margin-top: 150px;
+}
+.produk h2 {
+  text-align: center;
+}
+
+.magnific-image .magnific-anchor {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .popup-image img {
+    width: 850px;
+  }
+}
+
+@media (max-width: 992px) {
+  .popup-image img {
+    width: 750px;
+  }
+}
+
+.magnific-image .magnific-anchor:hover img {
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.magnific-image .magnific-anchor:hover img {
+  transform: scale(1.1);
+}
+
+.card-text {
+  text-align: center;
+}
+.card-body span {
+  font-style: italic;
+  font-size: 15px;
+}
+.card-body a {
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+.card-body a:hover {
+  text-decoration: underline;
+  color: #0d6dfd8d;
+}
+
+/* Cara Kerja */
+.cara-kerja {
+  text-align: center;
+  margin-top: 100px;
+}
+.cara-kerja-bg {
+  background-image: url(img/fireblock-bg-api.jpg);
+  padding-bottom: 100px;
+  background-size: cover;
+}
+.cara-kerja-text {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  padding-top: 100px;
+}
+.cara-kerja-text h1 {
+  font-weight: 300;
+  color: yellow;
+}
+.cara-kerja-text h2 {
+  font-weight: 300;
+  color: white;
+}
+.cara-kerja-text h3 {
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+}
+.cara-kerja-text p {
+  color: white;
+}
+.cara-kerja-text .warning {
+  color: white;
+  font-weight: 600;
+}
+
+/* Jenis Pemasangan */
+.penggunaan {
+  margin-top: 100px;
+}
+
+.penggunaan h2 {
+  font-weight: 300;
+}
+.penggunaan span {
+  color: #b2271d;
+}
+.penggunaan img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .penggunaan img {
+    width: 100%;
+  }
+}
+
+/* Video Demonstrasi */
+.demo {
+  margin-top: 100px;
+}
+.demo iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/* Floating */
+.btn-floating {
+  position: fixed;
+  right: 25px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: white;
+  transition: 0.2s;
+}
+.btn-floating:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.btn-floating span {
+  font-size: 16px;
+  margin-left: 5px;
+  transform: 0.2s;
+  line-height: 0px;
+  display: none;
+}
+.btn-floating:hover span {
+  display: inline-block;
+}
+.btn-floating:hover svg {
+  margin-bottom: -3px;
+}
+.btn-floating.instagram {
+  bottom: 25px;
+  background-color: purple;
+  border: 2px solid #fff;
+}
+.btn-floating.instagram:hover {
+  background-color: purple;
+}
+
+.btn-floating.whatsapp {
+  bottom: 85px;
+  background-color: green;
+  border: 2px solid #fff;
+}
+
+/* Foto Pemasangan & Sertifikasi */
+.pemasangan {
+  margin-top: 100px;
+}
+.carousel {
+  width: 50%;
+}
+.pemasangan h3 {
+  font-weight: 300;
+}
+.pemasangan span {
+  color: #b2271d;
+}
+.foto-pemasangan {
+  float: left;
+}
+.foto-sertifikat {
+  float: left;
+  box-sizing: border-box;
+}
+.foto-sertifikat h3 {
+  text-align: right;
+}
+@media (max-width: 992px) {
+  .foto-pemasangan {
+    float: none;
+  }
+  .foto-sertifikat {
+    float: none;
+    margin-top: 5%;
+  }
+  .foto-sertifikat h3 {
+    text-align: center;
+  }
+  .foto-pemasangan h3 {
+    text-align: center;
+  }
+  .carousel {
+    width: 100%;
+  }
+}
+
+/* Customer */
+.customer {
+  margin-top: 120px;
+}
+.customer h3 span {
+  color: #b2271d;
+}
+.customer h3 {
+  font-weight: 300;
+  text-align: center;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+  padding: 3em 2em;
+}
+
+.slide-track {
+  display: flex;
+  width: 100%; /* Pastikan ini disesuaikan dengan lebar konten Anda */
+  gap: 3em;
+  animation: scroll 10s linear infinite;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Sesuaikan dengan lebar yang sesuai untuk animasi */
+  }
+}
+
+.slider img {
+  width: 100px;
+  height: 100px;
+}
+
+.customer .government {
+  margin-top: 30px;
+  color: #b2271d;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
