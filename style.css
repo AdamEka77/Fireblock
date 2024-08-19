@@ -6,7 +6,6 @@
 
 /* Body */
 body {
-  min-height: 10000px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -438,8 +437,7 @@ body {
     rgba(255, 145, 77, 1) 0%,
     rgba(178, 39, 29, 1) 100%
   );
-  padding: 20px;
-  border-radius: 5px;
+  padding: 30px;
 }
 
 .logo-slide {
@@ -574,6 +572,46 @@ body {
   color: #b2271d;
 }
 
+/* Footer */
+.footer {
+  margin-top: 100px;
+  background-color: #272727e5;
+  padding: 20px;
+}
+.footer h3 {
+  font-weight: 300;
+  color: #ffce54;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer ol {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.footer ol a {
+  text-decoration: none;
+  color: white;
+}
+.footer p {
+  color: white;
+}
+
+.footer2 {
+  padding: 5px;
+  background-color: #272727;
+}
+
+.footer2 p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* Clearfix */
 .cf:before,
 .cf:after {
   content: " "; /* 1 */
