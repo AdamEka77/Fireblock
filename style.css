@@ -51,6 +51,8 @@ body {
 /* Jumbotron Banner */
 .hero {
   background-image: url(img/fireblock-banner.jpg);
+  background-position: center;
+  background-position-y: -5%;
   background-size: cover;
   height: 720px;
   position: relative;
@@ -72,6 +74,26 @@ body {
 @media (max-width: 768px) {
   .hero {
     zoom: 55%;
+  }
+}
+
+@media (max-width: 727px) {
+  .hero {
+    background-position-y: -30%;
+  }
+}
+
+@media (max-width: 605px) {
+  .hero {
+    background-position-y: -0%;
+  }
+}
+
+@media (max-width: 520px) {
+  /* Mobile portrait */
+  .hero {
+    background-position-y: 95px;
+    height: 500px; /* Sesuaikan tinggi jika diperlukan */
   }
 }
 
