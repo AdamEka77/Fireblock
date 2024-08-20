@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 5000px;
+}
+
+/* Navbar */
+.navbar-brand img {
+  box-sizing: border-box;
+}
+.logo {
+  position: absolute;
+}
+.Fireblock {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(255, 0, 0);
+  margin-left: 65px !important;
+}
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav-link:hover {
+  border-bottom: 1px solid red;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .nav-link {
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  .navrespon ul li a {
+    color: black;
+  }
+  .navrespon ul li a:hover {
+    color: #eee;
+    border-bottom: none;
+  }
+}
+
+/* Jumbotron Banner */
+.hero {
+  background-image: url(img/fireblock-banner.jpg);
+  background-position: center;
+  background-position-y: -5%;
+  background-size: cover;
+  height: 720px;
+  position: relative;
+}
+
+.hero-produk {
+  background-image: url(img/fireblock-produk-bg2.jpg);
+  background-position: center;
+  background-position-y: -5%;
+  background-size: cover;
+  height: 520px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.hero-produk::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-produk .container {
+  z-index: 1;
+  position: relative;
+}
+
+.hero-produk .display-4 {
+  padding-top: 300px;
+  color: white;
+  font-weight: 300;
+}
+
+@media (max-width: 992px) {
+  .hero-produk .display-4 {
+    padding-top: 300px;
+    color: white;
+    font-size: 300%;
+  }
+  .hero-produk span {
+    font-size: 150%;
+  }
+}
+
+.hero-produk span {
+  color: white;
+  font-size: 15px;
+}
+
+.hero-produk span a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-produk span a:hover {
+  color: rgb(47, 47, 242);
+}
+.hero-produk .produk {
+  color: rgb(47, 47, 242);
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 992px) {
+  .hero {
+    zoom: 75%;
+  }
+  .hero-produk {
+    zoom: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    zoom: 55%;
+  }
+  .hero-produk {
+    zoom: 55%;
+  }
+}
+
+@media (max-width: 727px) {
+  .hero {
+    background-position-y: -30%;
+  }
+  .hero-produk {
+    background-position-y: -30%;
+  }
+}
+
+@media (max-width: 605px) {
+  .hero {
+    background-position-y: -0%;
+  }
+  .hero-produk {
+    background-position-y: -0%;
+  }
+}
+
+@media (max-width: 520px) {
+  /* Mobile portrait */
+  .hero {
+    background-position-y: 95px;
+    height: 500px; /* Sesuaikan tinggi jika diperlukan */
+  }
+  .hero-produk {
+    background-position-y: 95px;
+    height: 500px; /* Sesuaikan tinggi jika diperlukan */
+  }
+}
+
+/* Produk Banner */
+
+.produk1 img {
+  width: 100%;
+}
+
+.produk1 {
+  margin-top: 100px;
+}
+
+.produk-pemasangan {
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+}
+
+.deskripsi {
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.spek {
+  padding-bottom: 50px;
+}
+
+.spesifikasi {
+  margin-top: 100px;
+}
+
+.spesifikasi h3 {
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+.spesifikasi svg {
+  padding-bottom: 20px;
+}
+
+.bi-panel {
+  color: #b2271d;
+}
