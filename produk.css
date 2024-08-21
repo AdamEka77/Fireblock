@@ -7,7 +7,6 @@
 /* Body */
 body {
   font-family: "Open Sans", sans-serif;
-  min-height: 5000px;
 }
 
 /* Navbar */
@@ -200,7 +199,7 @@ body {
 }
 
 .spek {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .spesifikasi {
@@ -219,4 +218,164 @@ body {
 
 .bi-panel {
   color: #b2271d;
+}
+
+/* Keunggulan */
+.keunggulan {
+  margin-top: 100px;
+}
+
+.keunggulan h3 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.keunggulan h3 span {
+  color: #b2271d;
+}
+
+.info-panel {
+  margin-top: 50px;
+}
+
+.info-panel p {
+  font-size: 90%;
+}
+
+.info-panel h4 {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+/* Floating */
+.btn-floating {
+  position: fixed;
+  right: 25px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: white;
+  transition: 0.2s;
+}
+.btn-floating:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.btn-floating span {
+  font-size: 16px;
+  margin-left: 5px;
+  transform: 0.2s;
+  line-height: 0px;
+  display: none;
+}
+.btn-floating:hover span {
+  display: inline-block;
+}
+.btn-floating:hover svg {
+  margin-bottom: -3px;
+}
+.btn-floating.instagram {
+  bottom: 25px;
+  background-color: purple;
+  border: 2px solid #fff;
+}
+.btn-floating.instagram:hover {
+  background-color: purple;
+}
+
+.btn-floating.whatsapp {
+  bottom: 85px;
+  background-color: green;
+  border: 2px solid #fff;
+}
+
+/* Video Demo */
+.video-demo {
+  margin-top: 100px;
+}
+.video-demo h3 {
+  font-weight: 400;
+}
+.video-demo .video-1 {
+  width: 100%;
+  height: 500px;
+}
+
+.video-demo .video-2 {
+  width: 560px;
+  height: 315px;
+}
+.video-demo .video-3 {
+  width: 545px;
+  height: 315px;
+}
+
+@media (max-width: 1075px) {
+  .video-demo .video-2 {
+    width: 100%;
+  }
+  .video-demo .video-3 {
+    width: 100%;
+  }
+}
+
+/* Video Testimoni */
+.testimoni {
+  margin-top: 150px;
+}
+.testimoni h3 {
+  font-weight: 400;
+}
+.testimoni .videot-1 {
+  width: 100%;
+  height: 150%;
+}
+@media (max-width: 992px) {
+  .testimoni .videot-1 {
+    padding-bottom: 100px;
+    width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  background-color: #272727e5;
+  padding: 20px;
+}
+.footer h3 {
+  font-weight: 300;
+  color: #ffce54;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer ol {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.footer ol a {
+  text-decoration: none;
+  color: white;
+}
+.footer p {
+  color: white;
+}
+
+.footer2 {
+  padding: 5px;
+  background-color: #272727;
+}
+
+.footer2 p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
 }
