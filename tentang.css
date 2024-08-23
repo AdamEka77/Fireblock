@@ -57,8 +57,8 @@ body {
   position: relative;
 }
 
-.hero-produk {
-  background-image: url(img/fireblock-produk-bg2.jpg);
+.hero-tentang {
+  background-image: url(img/fireblock-tentang-bg1.jpg);
   background-position: center;
   background-position-y: -5%;
   background-size: cover;
@@ -68,7 +68,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero-produk::after {
+.hero-tentang::after {
   content: "";
   display: block;
   width: 100%;
@@ -78,42 +78,42 @@ body {
   bottom: 0;
 }
 
-.hero-produk .container {
+.hero-tentang .container {
   z-index: 1;
   position: relative;
 }
 
-.hero-produk .display-4 {
+.hero-tentang .display-4 {
   padding-top: 300px;
   color: white;
   font-weight: 300;
 }
 
 @media (max-width: 992px) {
-  .hero-produk .display-4 {
+  .hero-tentang .display-4 {
     padding-top: 300px;
     color: white;
     font-size: 300%;
   }
-  .hero-produk span {
+  .hero-tentang span {
     font-size: 150%;
   }
 }
 
-.hero-produk span {
+.hero-tentang span {
   color: white;
   font-size: 15px;
 }
 
-.hero-produk span a {
+.hero-tentang span a {
   text-decoration: none;
   color: white;
 }
 
-.hero-produk span a:hover {
+.hero-tentang span a:hover {
   color: rgb(47, 47, 242);
 }
-.hero-produk .produk {
+.hero-tentang .tentang {
   color: rgb(47, 47, 242);
 }
 
@@ -134,7 +134,7 @@ body {
   .hero {
     zoom: 75%;
   }
-  .hero-produk {
+  .hero-tentang {
     zoom: 75%;
   }
 }
@@ -142,7 +142,7 @@ body {
   .hero {
     zoom: 55%;
   }
-  .hero-produk {
+  .hero-tentang {
     zoom: 55%;
   }
 }
@@ -151,7 +151,7 @@ body {
   .hero {
     background-position-y: -30%;
   }
-  .hero-produk {
+  .hero-tentang {
     background-position-y: -30%;
   }
 }
@@ -160,7 +160,7 @@ body {
   .hero {
     background-position-y: -0%;
   }
-  .hero-produk {
+  .hero-tentang {
     background-position-y: -0%;
   }
 }
@@ -171,81 +171,202 @@ body {
     background-position-y: 95px;
     height: 500px; /* Sesuaikan tinggi jika diperlukan */
   }
-  .hero-produk {
+  .hero-tentang {
     background-position-y: 95px;
     height: 500px; /* Sesuaikan tinggi jika diperlukan */
   }
 }
 
-/* Produk Banner */
-
-.produk1 img {
-  width: 100%;
-}
-
-.produk1 {
+/* Tentang */
+.tentang {
   margin-top: 100px;
 }
 
-.produk-pemasangan {
-  margin-top: 50px;
+.tentang img {
+  width: 100%;
+  height: auto;
 }
 
-@media (min-width: 992px) {
+.tentang h3 {
+  text-transform: uppercase;
 }
 
-.deskripsi {
+.tentang p {
+  font-size: 100%;
   text-align: justify;
-  margin-top: 50px;
 }
 
-.spek {
+@media (max-width: 992px) {
+  .tentang .teks {
+    margin-top: 20px;
+  }
+}
+
+/* Visi & Misi */
+.visi-misi {
+  margin-top: 100px;
+}
+
+.visi-misi svg {
+  padding-right: 15px;
+}
+
+.visi-misi p {
+  font-size: 110%;
+  text-align: justify;
+  font-weight: 200;
+}
+.visi-misi span {
+  color: #b2271d;
+}
+
+/* Info */
+.info {
+  margin-top: 100px;
+}
+
+.info-bg {
+  background-image: url(img/fireblock-bg-api.jpg);
+  background-size: cover;
+  height: 420px;
+}
+
+.info-bg::after {
+  background-image: linear-gradient(to top, rgba(1, 1, 1, 1), rgba(0, 0, 0, 0));
+}
+
+.info-call {
+  padding-top: 150px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* @media (max-width: 992px) {
+  .info-call {
+    padding-top: 20%;
+  }
+} */
+
+.info h3 {
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  font-size: 200%;
+}
+
+.info h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+.bi-info {
+  color: white;
+}
+
+/* Layanan */
+.layanan {
+  margin-top: 100px;
+}
+.layanan h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+
+.layanan span {
+  color: #b2271d;
+}
+
+.bi-layanan {
+  color: #b2271d;
+}
+
+.layanan-list {
+  margin-top: 50px;
+}
+.list {
   padding-bottom: 30px;
 }
 
-.spesifikasi {
+/* Statistik */
+.statistik {
   margin-top: 100px;
 }
 
-.spesifikasi h3 {
-  padding-bottom: 20px;
-  font-weight: 300;
-  font-size: 120%;
-}
-
-.spesifikasi svg {
-  padding-bottom: 20px;
-}
-
-.bi-panel {
-  color: #b2271d;
-}
-
-/* Keunggulan */
-.keunggulan {
-  margin-top: 100px;
-}
-
-.keunggulan h3 {
+.statistik h3 {
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
-
-.keunggulan h3 span {
+.statistik span {
   color: #b2271d;
 }
 
-.info-panel {
+.statistik section {
+  float: left;
+  padding-left: 20px;
+}
+
+.statistik svg {
+  margin-top: 25px;
+  float: left;
+  border-right: 2px solid #b2271d;
+  padding-right: 15px;
+  display: block;
+}
+
+.customer-statistik {
+  gap: 2em;
   margin-top: 50px;
 }
 
-.info-panel p {
-  font-size: 90%;
+.statistik-border {
+  box-shadow: 0px 0px 3px #000000c7;
+  padding: 20px;
 }
 
-.info-panel h4 {
-  padding-top: 20px;
-  font-weight: bold;
+@media (max-width: 992px) {
+  .statistik-border {
+    width: 90%;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  background-color: #272727e5;
+  padding: 20px;
+}
+.footer h3 {
+  font-weight: 300;
+  color: #ffce54;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer ol {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.footer ol a {
+  text-decoration: none;
+  color: white;
+}
+.footer p {
+  color: white;
+}
+
+.footer2 {
+  padding: 5px;
+  background-color: #272727;
+}
+
+.footer2 p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
 }
 
 /* Floating */
@@ -294,89 +415,21 @@ body {
   border: 2px solid #fff;
 }
 
-/* Video Demo */
-.video-demo {
-  margin-top: 100px;
-}
-.video-demo h3 {
-  font-weight: 400;
-}
-.video-demo .video-1 {
-  width: 100%;
-  height: 500px;
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
-.video-demo .video-2 {
-  width: 560px;
-  height: 315px;
-}
-.video-demo .video-3 {
-  width: 545px;
-  height: 315px;
+.cf:after {
+  clear: both;
 }
 
-@media (max-width: 1075px) {
-  .video-demo .video-2 {
-    width: 100%;
-  }
-  .video-demo .video-3 {
-    width: 100%;
-  }
-}
-
-/* Video Testimoni */
-.testimoni {
-  margin-top: 150px;
-}
-.testimoni h3 {
-  font-weight: 400;
-}
-.testimoni .videot-1 {
-  width: 100%;
-  height: 150%;
-}
-@media (max-width: 992px) {
-  .testimoni .videot-1 {
-    padding-bottom: 100px;
-    width: 100%;
-  }
-}
-
-/* Footer */
-.footer {
-  margin-top: 100px;
-  background-color: #272727e5;
-  padding: 20px;
-}
-.footer h3 {
-  font-weight: 300;
-  color: #ffce54;
-}
-
-.footer img {
-  width: 100%;
-}
-
-.footer ol {
-  list-style-type: none;
-  line-height: 30px;
-}
-
-.footer ol a {
-  text-decoration: none;
-  color: white;
-}
-.footer p {
-  color: white;
-}
-
-.footer2 {
-  padding: 5px;
-  background-color: #272727;
-}
-
-.footer2 p {
-  color: white;
-  text-align: center;
-  padding-top: 15px;
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
 }

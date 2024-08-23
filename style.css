@@ -55,6 +55,7 @@ body {
   background-size: cover;
   height: 720px;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .hero-produk {
