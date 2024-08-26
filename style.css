@@ -522,12 +522,6 @@ body {
 /* Slider */
 
 .logoss {
-  background: rgb(255, 145, 77);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 145, 77, 1) 0%,
-    rgba(178, 39, 29, 1) 100%
-  );
   padding: 30px;
 }
 

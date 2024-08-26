@@ -104,15 +104,18 @@
         <div class="row">
           <h2>Send a Message</h2>
           <div class="col-lg-6">
-            <form>
+            <form name="submit-to-google-sheet">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
                 <input
                   type="text"
+                 
+                  name="name"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="name"
                   aria-describedby="emailHelp"
                   ="Insert your name*"
+                  required
                 />
               </div>
             </div>
@@ -121,10 +124,13 @@
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input
                   type="email"
+                
+                  name="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="email"
                   aria-describedby="emailHelp"
                   ="Insert your Email*"
+                  required
                 />
               </div>
             </div>
@@ -139,9 +145,11 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="subject"
+                  name="subject"
                   aria-describedby="emailHelp"
                   ="Insert your Subject*"
+                  required
                 />
               </div>
             </div>
@@ -150,10 +158,13 @@
                 <label for="exampleInputEmail1" class="form-label">Phone</label>
                 <input
                   type="number"
+          
+                  name="phone"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="phone"
                   aria-describedby="emailHelp"
                   ="Insert your Number Phone*"
+                  required
                 />
               </div>
             </div>
@@ -165,8 +176,10 @@
                 >
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="message"
+                  name="message"
                   rows="3"
+                  required
                 ></textarea>
               </div>
             </div>
@@ -303,5 +316,19 @@
       </button></a
     >
     <!-- Akhir Floating Contact -->
+
+
+    <!-- Script -->
+     <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxnW8VZqauRzr-NaFTF3TddgihXdreSa6b5IN08q8mEn4v1I_6uY8gCooaB6oeBMiJv/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+     </script>
   </body>
 </html>
