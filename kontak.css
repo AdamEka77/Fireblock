@@ -7,7 +7,6 @@
 /* Body */
 body {
   font-family: "Open Sans", sans-serif;
-  min-height: 5000px;
 }
 
 /* Navbar */
@@ -65,7 +64,6 @@ body {
   background-size: cover;
   height: 520px;
   position: relative;
-  box-sizing: border-box;
   background-repeat: no-repeat;
 }
 .hero-kontak::after {
@@ -180,4 +178,75 @@ body {
 /* Form */
 .form {
   margin-top: 100px;
+}
+.form h2 {
+  text-transform: uppercase;
+}
+.btn-submit {
+  background-color: #b2271d;
+  color: white;
+}
+.btn-submit:hover {
+  background-color: #b2271db4;
+  color: #eee;
+}
+
+.kontak-kami {
+  background-color: #080808e5;
+  padding: 30px;
+  color: white;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .kontak-kami {
+    margin-top: 50px;
+  }
+}
+
+/* Map */
+.map {
+  margin-top: 100px;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: #272727e5;
+  padding: 20px;
+}
+.footer h3 {
+  font-weight: 300;
+  color: #ffce54;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer ol {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.footer ol a {
+  text-decoration: none;
+  color: white;
+}
+.footer p {
+  color: white;
+}
+
+.footer2 {
+  padding: 5px;
+  background-color: #272727;
+}
+
+.footer2 p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
 }
