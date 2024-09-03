@@ -62,19 +62,19 @@
         <div class="collapse navbar-collapse navrespon" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item px-4">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="produk.html">Produk</a>
+              <a class="nav-link" href="produk.php">Produk</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="tentang.html">Tentang Kami</a>
+              <a class="nav-link" href="tentang.php">Tentang Kami</a>
             </li>
             <li class="nav-item px-4">
               <a
                 class="nav-link active"
                 style="color: orangered; border-bottom: none"
-                href="kontak.html"
+                href="kontak.php"
                 >Kontak</a
               >
             </li>

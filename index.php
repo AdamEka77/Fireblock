@@ -66,13 +66,13 @@
               >
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="produk.html">Produk</a>
+              <a class="nav-link" href="produk.php">Produk</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="tentang.html">Tentang Kami</a>
+              <a class="nav-link" href="tentang.php">Tentang Kami</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="kontak.html">Kontak</a>
+              <a class="nav-link" href="kontak.php">Kontak</a>
             </li>
           </ul>
         </div>
@@ -1346,7 +1346,7 @@
      <div class="footer2">
       <div class="container">
         <p>
-          Visitor : <span id="count"></span> | Official Website © Copyright Fireblock Indonesia,
+          Visitor : <?php include 'counter.php'; ?>| Official Website © Copyright Fireblock Indonesia,
           All Right Reserved
         </p>
       </div>
@@ -1355,24 +1355,7 @@
     <!-- Customer -->
     <!-- Akhir Container -->
     <!-- Javascript -->
-    <script>
-      // Ambil hit counter dari localStorage
-      let count = localStorage.getItem("page_hits");
-
-      // Jika belum ada, inisialisasi dengan nilai 0
-      if (!count) {
-        count = 0;
-      }
-
-      // Tingkatkan hit counter
-      count++;
-
-      // Simpan kembali di localStorage
-      localStorage.setItem("page_hits", count);
-
-      // Tampilkan hit counter di halaman
-      document.getElementById("count").innerText = count;
-    </script>
+   
     <script>
       $(document).ready(function(){
     $('.customer-logos').slick({
