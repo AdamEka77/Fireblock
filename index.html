@@ -1337,21 +1337,42 @@
           </svg> marketing@fireblock.co.id</p>
           <p>Via Phone:</p>
           <p>021 - 3483 0111 <br>
-            0856 4092 0760 <br>
-            0821 8877 9800</p>
+            0811 9711 777 <br>
+            0813 8181 6386</p>
       </div>
           </div>
         </div>
      </div>
      <div class="footer2">
       <div class="container">
-        <p>Visitor : 109,198 | Official Website © Copyright Fireblock Indonesia, All Right Reserved</p>
+        <p>
+          Visitor : <span id="count"></span> | Official Website © Copyright Fireblock Indonesia,
+          All Right Reserved
+        </p>
       </div>
-     </div>
+    </div>
      <!-- Akhir Footer -->
     <!-- Customer -->
     <!-- Akhir Container -->
     <!-- Javascript -->
+    <script>
+      // Ambil hit counter dari localStorage
+      let count = localStorage.getItem("page_hits");
+
+      // Jika belum ada, inisialisasi dengan nilai 0
+      if (!count) {
+        count = 0;
+      }
+
+      // Tingkatkan hit counter
+      count++;
+
+      // Simpan kembali di localStorage
+      localStorage.setItem("page_hits", count);
+
+      // Tampilkan hit counter di halaman
+      document.getElementById("count").innerText = count;
+    </script>
     <script>
       $(document).ready(function(){
     $('.customer-logos').slick({

@@ -55,10 +55,12 @@ body {
   background-size: cover;
   height: 720px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-produk {
-  background-image: url(img/fireblock-produk-bg2.jpg);
+  background-image: url(img/bg-produkapi.jpg);
   background-position: center;
   background-position-y: -5%;
   background-size: cover;
@@ -379,4 +381,21 @@ body {
   color: white;
   text-align: center;
   padding-top: 15px;
+}
+
+/* Spesifikasi */
+
+.number {
+  font-size: 2em;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

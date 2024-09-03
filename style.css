@@ -156,24 +156,23 @@ body {
   }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 634px) {
   .hero {
-    background-position-y: -0%;
+    background-position-y: 65px;
   }
   .hero-produk {
-    background-position-y: -0%;
+    background-position-y: 65px;
   }
 }
 
 @media (max-width: 520px) {
-  /* Mobile portrait */
   .hero {
-    background-position-y: 95px;
-    height: 500px; /* Sesuaikan tinggi jika diperlukan */
+    background-position-y: 65px;
+    height: 500px;
   }
   .hero-produk {
-    background-position-y: 95px;
-    height: 500px; /* Sesuaikan tinggi jika diperlukan */
+    background-position-y: 65px;
+    height: 500px;
   }
 }
 
